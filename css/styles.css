@@ -1,0 +1,217 @@
+html, body {
+	margin: 0;
+	padding: 0;
+    padding-top: 25px;
+    height: 100%;
+    font-family: "Roboto";
+}
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px #888888;   
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    display: block;
+    padding: 4px 30px;
+}
+
+.logo_name {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 50px;
+    margin: 0;
+    display: block;
+    color: black;
+}
+
+.img_logo img {
+    width: 36px;
+    height: 36px;
+    float: left;
+}
+
+.nav_links {
+	float: right;
+	display: block;
+}
+
+.nav_links a {
+    float: left;
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav_links a:hover {
+    background-color: #bbdefb;
+    color: black;
+}
+
+.nav_links a.active {
+    background-color: #42a5f5;
+    color: white;
+}
+
+.nav_links .icon {
+    display: none;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .education .education-title {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav_links a:not(.icon) {display: none; padding-right: 50px;}
+    .nav_links a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav_links.responsive {position: relative;}
+    .nav_links.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav_links.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .parallax .parallax_content {
+        width: 100%;
+    }
+}
+
+.parallax_content, .education-title {
+    height: 100%;
+    width: 35%;
+    float: left;
+    background:rgba(9, 1, 48, 0.5);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-title {
+    background: #1137f7;
+    margin-right: 50px;
+    /*display: block;*/
+}
+
+.education {
+    height: 100%;
+    width: 100%;
+}
+
+ul {
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}
+
+.education-holder {
+    background-color: rgb(113, 148, 242);
+    height: 100%;
+}
+
+.college, .jejdays {
+    padding-top: 50px;
+}
+
+.college h3, .college h4, .college h5, .jejdays h3, .jejdays h4, .jejdays h5 {
+    padding: 0;
+    margin: 0;
+}
+
+.parallax_content_wrap h1, .parallax_content_wrap h3, .parallax_content_wrap h4 {
+    padding: 0;
+    margin: 0;
+    font-style: oblique;
+    color: white;
+}
+
+blockquote {
+    font-style: italic;
+    color: #184ee2;
+}
+
+.about {
+    background-color: white;
+    padding-bottom: 80px;
+    display: block;
+}
+
+.about h2 {
+    font-size: 50px;
+    color: #0e014c;
+}
+
+.container {
+    width: 70%;
+}
+
+.footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+    position: fixed; 
+    bottom: 0
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.eot");
+  src: url("../fonts/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Light), url("../fonts/roboto/Roboto-Light.eot");
+  src: url("../fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Regular), url("../fonts/roboto/Roboto-Regular.eot");
+  src: url("../fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Medium.eot");
+  src: url("../fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Bold.eot");
+  src: url("../fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
